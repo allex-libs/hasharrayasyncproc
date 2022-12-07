@@ -1,0 +1,26 @@
+{
+  "name": "allex_hasharrayasyncproclib",
+  "version": "1.0.0",
+  "description": "AllexJS lib for async processing of Arrays of Objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "allex-mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/allex-libs/hasharrayasyncproc.git"
+  },
+  "keywords": [
+    "ecosystem:AllexJS",
+    "hasharray",
+    "async",
+    "processing",
+    "lib"
+  ],
+  "author": "Andrija Petrovic <andrija.hers@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allex-libs/hasharrayasyncproc/issues"
+  },
+  "homepage": "https://github.com/allex-libs/hasharrayasyncproc#readme"
+}
