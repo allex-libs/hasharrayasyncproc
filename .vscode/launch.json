@@ -63,6 +63,21 @@
         "program": "${env:HOME}/lib/node_modules/allextesting/commandline/allex-mocha",
       },
       "args": ["test/test.join.js"]
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Aggregate",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "windows": {
+        "program": "${env:APPDATA}/npm/node_modules/allextesting/commandline/allex-mocha",
+      },
+      "linux": {
+        "program": "${env:HOME}/lib/node_modules/allextesting/commandline/allex-mocha",
+      },
+      "args": ["test/test.aggregate.js"]
     }
   ]
 }

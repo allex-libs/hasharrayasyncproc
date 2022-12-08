@@ -3,7 +3,6 @@ function createGroupJob (lib, mylib) {
 
   var qlib = lib.qlib;
   var SteppedJobOnSteppedInstance = qlib.SteppedJobOnSteppedInstance;
-  var aggFactory = require('./aggregators')(lib);
 
   function GroupJobCore (options) {
     this.options = options;
@@ -79,7 +78,7 @@ function createGroupJob (lib, mylib) {
   };
 
   function subgrouper (mapitem, rec, op, field) {
-    var agg = aggFactory(op);
+    var agg = mylib.aggregatorFactory(op);
     mapitem[field] = agg(mapitem[field], lib.readPropertyFromDotDelimitedString(rec, field));
   }
 

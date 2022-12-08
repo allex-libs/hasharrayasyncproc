@@ -7,10 +7,12 @@ function libCreator (execlib, arryopslib, datafilterslib) {
     jobcores: {}
   };
 
+  require('./aggregators')(lib, mylib);
   require('./traversercreator')(lib, datafilterslib, mylib);
   require('./conditionaltraversecreator')(lib, mylib);
-  require('./group')(lib, mylib);
+  require('./groupcreator')(lib, mylib);
   require('./joincreator')(lib, arryopslib, mylib);
+  require('./aggregatecreator')(lib, mylib);
 
   return mylib;
 }
